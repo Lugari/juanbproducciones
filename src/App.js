@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
+import HomePage from './pages/home/HomePage';
+import AboutPage from './pages/about/AboutPage';
+import ContactPage from './pages/contact/ContactPage';
+import Navbar from './components/pure/Navbar';
+
+
+
+import 'bootstrap/scss/bootstrap.scss'
+import 'bootstrap/js/index.esm.js'
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='bg-app'>
+        <Navbar/>
+          <Routes>
+          <Route path='/' element={<HomePage/>}/>
+          <Route path='about' element={<AboutPage/>}/>
+          <Route path='contact' element={<ContactPage/>}/>
+
+          <Route path='*' element={<h1>Page not found</h1>}></Route>
+          </Routes>
+      </div>
+    </Router>
   );
 }
 

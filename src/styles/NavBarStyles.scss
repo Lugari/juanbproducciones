@@ -1,0 +1,52 @@
+@import url(./styles.scss);
+
+.bg-app{
+  background: rgb(0,0,128);
+background: linear-gradient(145deg, rgba(0,0,128,1) 0%, rgba(81,133,141,1) 65%, rgba(152,251,152,1) 100%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0rem 1rem;
+    border-bottom: 2px solid #a9a9a9;
+    height: 5rem;
+    
+    .navbar-brand{
+      height: 50px;
+      margin: 0px 2rem 2rem 0px;
+      font-family: 'CrimsonFoam';
+      font-size: 3rem;
+      color: #FFF;
+      user-select: none;
+      
+      &:hover{
+        color: #FFF;
+      }
+      &:focus{
+        color: #FFF
+      }
+    }
+    
+    .navbar-collapse {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      color:#FFF;
+      
+      li {
+        margin-left: 20px;
+        color:#FFF;
+        a{
+          color: #FFF;
+          text-decoration: none;
+          &:hover{
+            background-color: #4f4f4f22;
+          }
+        }
+      }
+    }
+  }

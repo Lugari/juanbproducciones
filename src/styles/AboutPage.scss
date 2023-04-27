@@ -1,0 +1,80 @@
+@import './styles.scss';
+
+.aboutme-section{
+    font-family: 'Crimson Text';
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    margin: 60px 80px 0 80px;
+    gap: 20px;
+    height: calc( 100vh - 140px );
+    @media (max-width: 990px) {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-auto-flow: column;
+        margin: 60px 30px;
+    }
+    section{
+        padding: 0 2rem;
+        h1{
+
+            text-align: center;
+            font-size: 3.3rem;
+            @media (max-width:990px) {
+                font-size: 2.7rem;
+            }
+        }
+
+        p{
+            max-height: 450px;
+            overflow-y: scroll;
+            font-size: 1.5rem;
+            padding: 1rem;
+            text-align: justify;
+
+        }
+        @media (max-width:990px) {
+            order: 2;            
+        }
+
+    }
+    aside{
+        overflow: hidden;
+        object-fit: cover;
+        
+        img{
+            max-width: 100%;
+        }
+        @media (max-width:990px) {
+            order: 1;
+            padding: 2rem;
+            max-width: 100%;
+            
+        }
+
+    }
+}
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  /* Estilo del thumb de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+    background-color: #c5c5c5;
+    border-radius: 10px;
+  }
+  
+  /* Estilo del track de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background-color: #f2f2f222;
+    border-radius: 10px;
+  }
+  
+  /* Estilo del borde de la barra de desplazamiento */
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
