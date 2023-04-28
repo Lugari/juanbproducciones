@@ -45,7 +45,7 @@ const HomePage = () => {
 			</section>
 			<div class="header-imgs">
 				<Link to="/audiovisuales"><OverlayTrigger trigger='hover' placement='right' overlay={popover('Audiovisuales')}><VideoLibraryIcon /></OverlayTrigger> </Link>
-				<Link to="/fotografía"><OverlayTrigger trigger='hover' placement='right' overlay={popover('Fotografía')}><CameraIcon/></OverlayTrigger></Link>
+				<Link to="/fotografia"><OverlayTrigger trigger='hover' placement='right' overlay={popover('Fotografía')}><CameraIcon/></OverlayTrigger></Link>
 				<Link to="/memoria"> <OverlayTrigger trigger='hover' placement='right' overlay={popover('Investigación ')}><EmojiObjectsIcon/></OverlayTrigger></Link>
             </div>
 			<div class="burbujas">
