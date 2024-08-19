@@ -17,22 +17,22 @@ const HomePage = () => {
 		</Popover>
 	  );
 
-	  const bubleStyle=`@keyframes burbujasAnimation{
-		0%{
-			bottom: 0;
-			opacity: 0;
-		}
-		30%{
-			transform: translateX(30px);
-		}
-		50%{
-			opacity: .4;
-		}
-		100%{
-			bottom: 100vh;
-			opacity: 0;
-		}
-	}`
+//	  const bubleStyle=`@keyframes burbujasAnimation{
+//		0%{
+//			bottom: 0;
+//			opacity: 0;
+//		}
+//		30%{
+//			transform: translateX(30px);
+//		}
+//		50%{
+//			opacity: .4;
+//		}
+//		100%{
+//			bottom: 100vh;
+//			opacity: 0;
+//		}
+//	}`
 	  
 	  // eslint-disable-next-line no-restricted-globals
 	  const burbuja = (size, time) =>(<div className='burbuja' style={{animationIterationCount:15, animationName:'burbujas', width:size,height: size, left: Math.round(Math.random()*screen.width),animationDuration:time,animationDelay:time*Math.random()  }}></div>)
@@ -44,8 +44,8 @@ const HomePage = () => {
 				<h2 className='header-subtitle' >D&P MEDIOS AUDIOVISUALES</h2>
 			</section>
 			<div class="header-imgs">
-				<Link to="/audiovisuales"><OverlayTrigger trigger='hover' placement='right' overlay={popover('Audiovisuales')}><VideoLibraryIcon /></OverlayTrigger> </Link>
-				<Link to="/fotografia"><OverlayTrigger trigger='hover' placement='right' overlay={popover('Fotografía')}><CameraIcon/></OverlayTrigger></Link>
+				<Link to="/media"><OverlayTrigger trigger='hover' placement='right' overlay={popover('Audiovisuales')}><VideoLibraryIcon /></OverlayTrigger> </Link>
+				<Link to="/photos"><OverlayTrigger trigger='hover' placement='right' overlay={popover('Fotografía')}><CameraIcon/></OverlayTrigger></Link>
 				<Link to="/memoria"> <OverlayTrigger trigger='hover' placement='right' overlay={popover('Investigación ')}><EmojiObjectsIcon/></OverlayTrigger></Link>
             </div>
 			<div class="burbujas">
