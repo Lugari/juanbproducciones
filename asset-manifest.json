@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bf46c58.css",
-    "main.js": "/static/js/main.9283cee1.js",
-    "static/js/787.fc0416b3.chunk.js": "/static/js/787.fc0416b3.chunk.js",
-    "static/media/CrimsonFoamFont.ttf": "/static/media/CrimsonFoamFont.9498fcc10ad08207f5ed.ttf",
-    "index.html": "/index.html",
-    "main.0bf46c58.css.map": "/static/css/main.0bf46c58.css.map",
-    "main.9283cee1.js.map": "/static/js/main.9283cee1.js.map",
-    "787.fc0416b3.chunk.js.map": "/static/js/787.fc0416b3.chunk.js.map"
+    "main.css": "/juanbproducciones/static/css/main.0efa302e.css",
+    "main.js": "/juanbproducciones/static/js/main.81ea18c2.js",
+    "static/js/787.fc0416b3.chunk.js": "/juanbproducciones/static/js/787.fc0416b3.chunk.js",
+    "static/media/CrimsonFoamFont.ttf": "/juanbproducciones/static/media/CrimsonFoamFont.9498fcc10ad08207f5ed.ttf",
+    "index.html": "/juanbproducciones/index.html",
+    "main.0efa302e.css.map": "/juanbproducciones/static/css/main.0efa302e.css.map",
+    "main.81ea18c2.js.map": "/juanbproducciones/static/js/main.81ea18c2.js.map",
+    "787.fc0416b3.chunk.js.map": "/juanbproducciones/static/js/787.fc0416b3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bf46c58.css",
-    "static/js/main.9283cee1.js"
+    "static/css/main.0efa302e.css",
+    "static/js/main.81ea18c2.js"
   ]
 }
