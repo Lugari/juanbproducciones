@@ -46,7 +46,7 @@ const HomePage = () => {
 			<div class="header-imgs">
 				<Link to="/media"><OverlayTrigger trigger='hover' placement='right' overlay={popover('Audiovisuales')}><VideoLibraryIcon /></OverlayTrigger> </Link>
 				<Link to="/photos"><OverlayTrigger trigger='hover' placement='right' overlay={popover('Fotografía')}><CameraIcon/></OverlayTrigger></Link>
-				<Link to="/memoria"> <OverlayTrigger trigger='hover' placement='right' overlay={popover('Investigación ')}><EmojiObjectsIcon/></OverlayTrigger></Link>
+				<Link to="/"> <OverlayTrigger trigger='hover' placement='right' overlay={popover('Investigación ')}><EmojiObjectsIcon sx={{color:'gray'}}/></OverlayTrigger></Link>
             </div>
 			<div class="burbujas">
 				{burbuja('70px', `${Math.random()*7+3}s`)}

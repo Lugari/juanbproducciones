@@ -6,7 +6,7 @@ import ContactPage from './pages/contact/ContactPage';
 import MediaPage from './pages/media/MediaPage'
 import PhotosPage from './pages/photos/PhotosPage'
 import Navbar from './components/pure/Navbar';
- 
+import Footer from './components/pure/Footer';
 
 
 import 'bootstrap/scss/bootstrap.scss'
@@ -29,6 +29,7 @@ function App() {
 
           <Route path='*' element={<h1>Page not found</h1>}></Route>
           </Routes>
+          <Footer/>
       </div>
     </Router>
   );
