@@ -7,7 +7,7 @@ const Footer = () => {
 
         <Box component="footer" sx={{ py: 3, textAlign: 'center' }}>
         <Typography variant="body1" color="white" sx={{fontFamily: 'Crimson Text'}}>
-          © 2024 JuanB Audiovisuales.
+          © 2024 Juanb.pro
         </Typography>
       </Box>
     );
