@@ -15,7 +15,10 @@ const SingleVideoCard = ({ contentType, url, title, description }) => {
               ) : (
                 <CardMedia
                   component="img"
-                  height="360"
+                  sx={{ 
+                    objectFit: 'scale-down',
+                    objectPosition: 'top',
+                    }}
                   image={url}
                   alt={title}
                 />

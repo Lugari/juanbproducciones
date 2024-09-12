@@ -33,7 +33,7 @@ const PhotosCardGrid = ({ title = 'Trabajos audiovisuales' }) => {
 
       <Grid container spacing={8} justifyContent="flex-start" p={8}>
         {photos.map((photo) => (
-          <Grid item xs={12} sm={6} md={4} key={photo.id}>
+          <Grid item xs={12} sm={6} md={3} key={photo.id}>
             <SingleVideoCard contenType='img' url={photo.url} title={photo.title} description={photo.description} />
           </Grid>
         ))}
