@@ -1,0 +1,66 @@
+@import url(./styles.scss);
+
+.header-container{
+    font-family: 'Crimson Text';
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 9fr 1fr;
+    color: #FFFFFF;
+    height: calc( 100vh - 80px );
+    align-items: center;
+    overflow: hidden;
+    section{
+        text-align: center;
+        user-select: none;
+        h1{
+
+            font-family: 'CrimsonFoam';
+            font-size: 8rem;
+            text-decoration: none;
+        }
+        h2{
+            margin-top: 80px;
+        }
+
+    }
+
+    .header-imgs{
+        align-content: center;
+        a{
+            color: #000000;
+            display: flex;
+            svg{
+                font-size: 90px;
+                margin:1rem;
+            }
+        }
+    }
+    .burbuja{
+        z-index: 1;
+        border-radius: 50%;
+        background: #d0ca1c;
+        opacity: .3;
+        position: absolute;
+        bottom: -150;
+        background-image: url('https://www.pngmart.com/files/22/Photoshop-Logo-PNG-Isolated-HD.png');
+    }
+    
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
