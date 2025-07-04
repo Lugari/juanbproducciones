@@ -10,7 +10,7 @@ const theme = createTheme({
   },
 });
 
-const PhotosCardGrid = ({ title = 'Trabajos audiovisuales' }) => {
+const PhotosCardGrid = ({ title = 'Trabajos Realizados' }) => {
   const { photos, loading, error } = usePhotos();
   
   if (loading) return <div>Loading...</div>;
@@ -22,7 +22,7 @@ const PhotosCardGrid = ({ title = 'Trabajos audiovisuales' }) => {
         <Typography 
           variant="h1" 
           sx={{ 
-            color: 'white',
+            color: 'yellow',
             fontFamily: 'Crimson Text, serif',
             textAlign: 'center',
           }}
